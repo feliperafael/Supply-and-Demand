@@ -34,7 +34,7 @@ for scenario in range(len(price_init)):
     line_2, = plt.plot(prices,'b',label='price')
     plt.xlabel("time")
     plt.ylabel("prices/amount")
-    plt.title('Amount and price over time for different initial scenarios')
+    plt.title('Amount and price over time')
     plt.legend(handles=[line_1, line_2])
     plt.show()
     
