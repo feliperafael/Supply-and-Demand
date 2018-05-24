@@ -16,7 +16,7 @@ def amount(amount_now, price_now):
     return (amount_now + 0.2*(price_now-100))
 
 times = 100
-time = range(0,100,1)
+
 price_init  = [100,200,100,100]
 amount_init = [500,500,600,400] 
 
@@ -34,6 +34,7 @@ for scenario in range(len(price_init)):
     line_2, = plt.plot(prices,'b',label='price')
     plt.xlabel("time")
     plt.ylabel("prices/amount")
+    plt.title('Amount and price over time for different initial scenarios')
     plt.legend(handles=[line_1, line_2])
     plt.show()
     
